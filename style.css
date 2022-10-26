@@ -4,19 +4,8 @@
 body {
   margin: 0;
   background-color: #e5e5e5;
-}
-
-#shape1 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-}
-
-#shape2 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 209px;
+  background-image: url(/assets/image_geometry_1.png);
+  background-repeat: no-repeat;
 }
 
 #menupng {
