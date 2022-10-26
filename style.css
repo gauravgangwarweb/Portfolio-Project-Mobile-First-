@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+#shape1 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+}
+
+#shape2 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  right: 209px;
+}
+
+#menupng {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 19px;
+  left: 284px;
+}
+
+.name {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  left: 16px;
+  top: 104px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.container1 p {
+  position: absolute;
+  width: 288px;
+  height: 126px;
+  left: 16px;
+  top: 240px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #1a2236;
+}
+
+.container1 button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 288px;
+  height: 50px;
+  left: 16px;
+  top: 420px;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
