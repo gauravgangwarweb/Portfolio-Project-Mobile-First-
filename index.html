@@ -171,16 +171,33 @@
     </div>
   </section>
   <section class="contact-form">
-    <h2>Contact me</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project
-      that needs coding. I'd love to help with it.
-    </p>
-    <form action="">
-      <input type="text" max="30" placeholder="Alexandra Loremipsum">
-      <input type="email" placeholder="alexandra@gmail.com">
-      <textarea name="" id="" maxlength="500" cols="30" rows="10" placeholder="Write your message here"></textarea>
+    <h2>Get started</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    <form method="post" action="https://formspree.io/f/xvoyvapl">
+        <input class="form-items" type="text" name="name" id="full-name" maxlength="30" placeholder="Your name" required>
+        <input class="form-items" type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea class="form-items" name="text-area" id="text-area" maxlength="500" cols="30" rows="6" placeholder="Write your message here" required></textarea>
+        <a href="#">
+            <button type="submit" class="start-collab">Start collaboration</button>
+        </a>
     </form>
   </section>
+  <footer>
+    <a href="#">
+        <button type="button">
+            Get my Resume
+            <img src="./assets/resume.png">
+        </button>
+    </a>
+    <div class="footer-icons">
+        <a href="#"><img class="stack-img" src="./assets/ic_stackoverflow.png"></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_github.png"></a>
+        <a href="#"><img class="icons-img" src="./assets/Group.png"></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_linkedin.png"></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_medium.png"></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_angellist.png" alt=""></a>
+    </div>
+  </footer>
 </body>
 
 </html>
