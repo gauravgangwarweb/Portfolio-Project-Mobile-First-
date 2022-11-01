@@ -28,6 +28,10 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/gauravgangwarweb)
 
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/michaelamponsah)
+
 
 ## 🤝 Contributing
 
