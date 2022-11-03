@@ -521,10 +521,6 @@ button:hover {
     overflow: visible;
   }
 
-  .project-ins {
-    display: none;
-  }
-
   .prtemplate-2 {
     display: grid;
     grid-template-columns: 40% 30% 30%;
@@ -558,6 +554,10 @@ button:hover {
   .prtemplate3-grid {
     display: flex;
     flex-direction: column;
+  }
+
+  .prtemplate3-img {
+    display: flex;
   }
 
   .prtemplate3-img img {
@@ -692,6 +692,7 @@ button:hover {
 
   #email {
     margin-left: 0;
+    margin-right: 28px;
     max-width: 253px;
   }
 
@@ -729,5 +730,14 @@ button:hover {
     background-color: white;
     border: 1px solid #1a2236;
     color: #1a2236;
+  }
+
+  .project-ins {
+    opacity: 0;
+    margin-top: -190px;
+  }
+
+  .project-ins:hover {
+    opacity: 100%;
   }
 }
