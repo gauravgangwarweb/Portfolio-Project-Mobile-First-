@@ -540,6 +540,10 @@ button:hover {
     background-color: #f9f9fa;
   }
 
+  .prtemplate2-gem {
+    display: flex;
+  }
+
   .prtemplate2-gem img {
     max-width: 100%;
     overflow: hidden;
