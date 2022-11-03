@@ -2,31 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <nav><img id="menupng" src="./assets/ic_menu.png"></nav>
+    <nav>
+      <img id="menupng" src="./assets/ic_menu.png" />
+      <ul>
+        <li><a href="#hello">Hello</a></li>
+        <li><a href="#works">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <section class="container1">
-    <h1 class="name">Gaurav Gangwar</h1>
-    <p>Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If
-      you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-    <a href="#"><button type="button">Start collaboration</button></a>
+  <section class="container1" id="hello">
+    <div class="cont-text-div">
+      <h1 class="name">Gaurav Gangwar</h1>
+      <p>
+        Hello! I am a software developer! I can help you build a product,
+        feature or website. Taka a look of my works.<br />If you like what you
+        see and have a project you need coded, don’t hesitate and contact me.
+      </p>
+      <a href="#"><button type="button">Start collaboration</button></a>
+    </div>
     <div class="after-head">
-      <img src="./assets/image_geometry_2.png">
+      <img class="cont-img1" src="./assets/image_geometry_2.png" />
+      <img class="cont-img2" src="./assets/image-geometry_1.svg" />
     </div>
   </section>
-  <section class="works">
-    <h2>Projects</h2>
-    <div class="grid-items">
+  <section class="works" id="works">
+    <div class="pr-title-pr1">
+      <div class="pr-h2">
+        <h2>Projects</h2>
+      </div>
       <div class="project">
-        <img class="pr-img1" src="./assets/Rectangle 21.png">
+        <img class="pr-img1" src="./assets/Rectangle 21.svg" />
         <div class="project-ins">
           <h3>Project name goes here</h3>
           <ul>
@@ -37,13 +53,16 @@
           <a href="#">
             <button type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
+              <img class="pr-button-img" src="./assets/Union.png" />
             </button>
           </a>
         </div>
       </div>
+    </div>
+    <div class="prtemplate-2">
+      <!-- Project 2 -->
       <div class="project">
-        <img class="pr-img" src="./assets/pr2.png">
+        <img class="pr-img des-pr2" src="./assets/Rectangle 46.svg" />
         <div class="project-ins">
           <h3>Project name goes here</h3>
           <ul>
@@ -54,13 +73,17 @@
           <a href="#">
             <button type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
+              <img class="pr-button-img" src="./assets/Union.png" />
             </button>
           </a>
         </div>
       </div>
-      <div class="project">
-        <img class="pr-img" src="./assets/pr3.png">
+      <div class="prtemplate2-gem">
+        <img src="./assets/image-geometry_2.svg"/>
+      </div>
+      <!-- Project 3 -->
+      <div class="project pr-3">
+        <img class="pr-img des-pr3" src="./assets/Rectangle 25.svg" />
         <div class="project-ins">
           <h3>Project name goes here</h3>
           <ul>
@@ -71,13 +94,16 @@
           <a href="#">
             <button type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
+              <img class="pr-button-img" src="./assets/Union.png" />
             </button>
           </a>
         </div>
       </div>
+    </div>
+    <div class="prtemplate-3">
+      <!-- Project 4 -->
       <div class="project">
-        <img class="pr-img" src="./assets/pr4.png">
+        <img class="pr-img des-pr4" src="./assets/Rectangle 27.svg" />
         <div class="project-ins">
           <h3>Project name goes here</h3>
           <ul>
@@ -88,30 +114,43 @@
           <a href="#">
             <button type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
+              <img class="pr-button-img" src="./assets/Union.png" />
             </button>
           </a>
         </div>
       </div>
-      <div class="project">
-        <img class="pr-img" src="./assets/pr5.png">
-        <div class="project-ins">
-          <h3>Project name goes here</h3>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <a href="#">
-            <button type="button">
-              <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
-            </button>
-          </a>
+      <div class="prtemplate3-grid">
+        <!-- Project 5 -->
+        <div class="project">
+          <img class="pr-img des-pr5" src="./assets/Rectangle 26.svg" />
+          <div class="project-ins">
+            <h3>Project name goes here</h3>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="#">
+              <button type="button">
+                <span>See this project</span>
+                <img class="pr-button-img" src="./assets/Union.png" />
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="prtemplate3-img">
+          <!-- <img src="./assets/Shape.svg"> -->
+          <img src="./assets/Group 83 (1).svg" />
         </div>
       </div>
+    </div>
+    <div class="prtemplate-4">
+      <div class="prtemplate4-back">
+        <img src="./assets/image-geometry_4.svg" alt="" />
+      </div>
+      <!-- Project 6 -->
       <div class="project">
-        <img class="pr-img" src="./assets/pr6.png">
+        <img class="pr-img" src="./assets/Rectangle 47.svg" />
         <div class="project-ins">
           <h3>Project name goes here</h3>
           <ul>
@@ -122,80 +161,108 @@
           <a href="#">
             <button type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png">
+              <img class="pr-button-img" src="./assets/Union.png" />
             </button>
           </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="about">
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-    <button type="button">
-      Get my CV
-      <img src="./assets/ic_download.svg">
-    </button>
-    <div class="languages">
-      <h4 class="set-h">Languages</h4>
-      <ul class="set-ul">
-        <li>JavaScript(ES5/ES6)</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-      <img class="set-img" src="./assets/hash.png">
+  <section class="about" id="about">
+    <div class="about-col-1">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ea eiusmod
+      </p>
+      <button type="button">
+        Get my CV
+        <img src="./assets/ic_download.svg" />
+      </button>
     </div>
-    <div class="frameworks">
-      <h4 class="set-h">Frameworks</h4>
-      <ul class="set-ul">
-        <li>Bootstrap</li>
-        <li>Ruby on rails</li>
-        <li>RSpec</li>
-        <li>Capibara</li>
-        <li>Selenium</li>
-      </ul>
-      <img class="set-img" src="./assets/Group 18.png">
-    </div>
-    <div class="skills">
-      <h4 class="set-h">Skills</h4>
-      <ul class="set-ul">
-        <li>Codekit</li>
-        <li>Codepan</li>
-        <li>GitHub</li>
-        <li>GitLab</li>
-        <li>Terminal</li>
-      </ul>
-      <img class="set-img" src="./assets/ic_skills.png">
+    <div class="about-col-2">
+      <div class="col-2-child">
+        <div class="languages">
+          <h4 class="set-h">Languages</h4>
+          <ul class="set-ul">
+            <li>JavaScript(ES5/ES6)</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <img class="set-img" src="./assets/hash.png" />
+        </div>
+        <div class="frameworks">
+          <h4 class="set-h">Frameworks</h4>
+          <ul class="set-ul">
+            <li>Bootstrap</li>
+            <li>Ruby on rails</li>
+            <li>RSpec</li>
+            <li>Capibara</li>
+            <li>Selenium</li>
+          </ul>
+          <img class="set-img" src="./assets/Group 18.png" />
+        </div>
+        <div class="skills">
+          <h4 class="set-h">Skills</h4>
+          <ul class="set-ul">
+            <li>Codekit</li>
+            <li>Codepan</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+            <li>Terminal</li>
+          </ul>
+          <img class="set-img" src="./assets/ic_skills.png" />
+        </div>
+        <div class="dots-3">
+          <img src="./assets/image_dots_with_teal.svg" />
+        </div>
+      </div>
     </div>
   </section>
-  <section class="contact-form">
-    <h2>Get started</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-    <form method="post" action="https://formspree.io/f/xvoyvapl">
-        <input class="form-items" type="text" name="name" id="full-name" maxlength="30" placeholder="Your name" required>
-        <input class="form-items" type="email" name="email" id="email" placeholder="Your Email" required>
-        <textarea class="form-items" name="text-area" id="text-area" maxlength="500" cols="30" rows="6" placeholder="Write your message here" required></textarea>
+  <section class="contact-form img1" id="contact">
+    <div class="form-ins">
+      <h2>Get started</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+      <form method="post" action="https://formspree.io/f/xvoyvapl">
+        <div class="name-email">
+          <input class="form-items" type="text" name="name" id="full-name" maxlength="30" placeholder="Your name"
+            required />
+          <input class="form-items" type="email" name="email" id="email" placeholder="Your Email" required />
+        </div>
+        <textarea class="form-items" name="text-area" id="text-area" maxlength="500" cols="30" rows="6"
+          placeholder="Write your message here" required></textarea>
         <a href="#">
-            <button type="submit" class="start-collab">Start collaboration</button>
+          <button type="submit" class="start-collab">
+            Start collaboration
+          </button>
         </a>
-    </form>
+      </form>
+    </div>
+    <img class="img2" src="./assets/image-geometry_7.svg">
   </section>
   <footer>
-    <a href="#">
+    <div>
+      <a href="#">
         <button type="button">
-            Get my Resume
-            <img src="./assets/resume.png">
+          Get my Resume
+          <img src="./assets/resume.png" />
         </button>
-    </a>
+      </a>
+    </div>
     <div class="footer-icons">
-        <a href="#"><img class="stack-img" src="./assets/ic_stackoverflow.png"></a>
-        <a href="#"><img class="icons-img" src="./assets/ic_github.png"></a>
-        <a href="#"><img class="icons-img" src="./assets/Group.png"></a>
-        <a href="#"><img class="icons-img" src="./assets/ic_linkedin.png"></a>
-        <a href="#"><img class="icons-img" src="./assets/ic_medium.png"></a>
-        <a href="#"><img class="icons-img" src="./assets/ic_angellist.png" alt=""></a>
+      <a href="#"><img class="stack-img" src="./assets/ic_stackoverflow.png" /></a>
+      <a href="#"><img class="icons-img" src="./assets/ic_github.png" /></a>
+      <a href="#"><img class="icons-img" src="./assets/Group.png" /></a>
+      <a href="#"><img class="icons-img" src="./assets/ic_linkedin.png" /></a>
+      <a href="#"><img class="icons-img" src="./assets/ic_medium.png" /></a>
+      <a href="#"><img class="icons-img" src="./assets/ic_angellist.png" alt="" /></a>
     </div>
   </footer>
 </body>

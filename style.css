@@ -8,9 +8,13 @@ body {
   background-repeat: no-repeat;
 }
 
+nav ul {
+  display: none;
+}
+
 #menupng {
   margin-top: 19px;
-  margin-left: 284px;
+  margin-left: 90%;
 }
 
 .name {
@@ -68,7 +72,15 @@ footer button {
   color: #fff;
 }
 
-.after-head img {
+.cont-img1 {
+  width: 100%;
+}
+
+.cont-img2 {
+  display: none;
+}
+
+.after-head .cont-img1 {
   margin-left: 0;
   margin-top: 32px;
 }
@@ -93,16 +105,20 @@ footer button {
 .project {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .pr-img1 {
   margin-left: 0;
   margin-top: 32px;
+  width: 100%;
 }
 
 .pr-img {
   margin-left: 0;
   margin-top: 0;
+  width: 100%;
 }
 
 .project-ins {
@@ -111,6 +127,7 @@ footer button {
   background: #1a2236;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.5px);
+  width: 100%;
 }
 
 .project-ins h3 {
@@ -373,4 +390,354 @@ footer {
 button:hover {
   background-color: yellowgreen;
   cursor: pointer;
+}
+
+.prtemplate2-gem {
+  display: none;
+}
+
+.prtemplate3-img {
+  display: none;
+}
+
+.prtemplate-4 {
+  display: none;
+}
+
+.dots-3 {
+  display: none;
+}
+
+.img2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: none;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #menupng {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 50px;
+    color: #1a2236;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+
+  .cont-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(./assets/image_dots.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .name {
+    font-size: 110px;
+    resize: both;
+  }
+
+  .container1 p {
+    width: 63%;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+
+  .container1 button {
+    width: 100%;
+    height: 70px;
+    margin-top: 59px;
+  }
+
+  .cont-img1 {
+    display: none;
+  }
+
+  .cont-img2 {
+    display: flex;
+    resize: both;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+  }
+
+  .works {
+    margin-top: 210px;
+  }
+
+  .pr-h2 {
+    background-image: url(./assets/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .pr-title-pr1 {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .pr-title-pr1 h2 {
+    font-size: 110px;
+    transform: rotate(-90deg);
+    margin-top: 76px;
+  }
+
+  .pr-img1 {
+    margin-top: 0;
+    overflow: visible;
+  }
+
+  .prtemplate-2 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  .des-pr3 {
+    height: 110%;
+  }
+
+  .des-pr4 {
+    max-width: 100%;
+    overflow: scroll;
+    background-color: #f9f9fa;
+  }
+
+  .prtemplate2-gem {
+    display: flex;
+  }
+
+  .prtemplate2-gem img {
+    max-width: 100%;
+    overflow: hidden;
+    height: 110%;
+  }
+
+  .prtemplate-3 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .prtemplate3-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prtemplate3-img {
+    display: flex;
+  }
+
+  .prtemplate3-img img {
+    max-width: 100%;
+  }
+
+  .prtemplate-4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .prtemplate4-back {
+    background-image: url(./assets/image-geometry_5.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .prtemplate4-back img {
+    float: left;
+  }
+
+  .about {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about-col-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-col-1 h2 {
+    font-weight: 400;
+    font-size: 110px;
+    margin: 0;
+  }
+
+  .about-col-1 p {
+    line-height: 21px;
+  }
+
+  .about-col-1 button {
+    width: 40%;
+    height: 10%;
+  }
+
+  .about-col-2 {
+    width: 50%;
+  }
+
+  .col-2-child {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .dots-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .dots-3 img {
+    height: 65%;
+  }
+
+  .contact-form {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .img1 {
+    background-image: url(./assets/image-geometry_6.svg);
+    background-repeat: no-repeat;
+  }
+
+  .form-ins {
+    max-width: 40%;
+    text-align: center;
+  }
+
+  .form-ins h2 {
+    font-weight: 400;
+    font-size: 110px;
+    margin-top: 168px;
+    line-height: 100%;
+  }
+
+  .form-ins p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+  }
+
+  .name-email {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  #full-name,
+  #email {
+    margin-top: 0;
+  }
+
+  #full-name {
+    padding-right: 0;
+    max-width: 254px;
+  }
+
+  #email {
+    margin-left: 0;
+    margin-right: 28px;
+    max-width: 253px;
+  }
+
+  #text-area {
+    max-width: 544px;
+    height: 140px;
+  }
+
+  .start-collab {
+    max-width: 254px;
+    height: 70px;
+    margin-top: 40px;
+    margin-bottom: 135px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .img2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 350px;
+    height: 350px;
+  }
+
+  footer {
+    max-width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button:hover {
+    background-color: white;
+    border: 1px solid #1a2236;
+    color: #1a2236;
+  }
+
+  .project-ins {
+    opacity: 0;
+    margin-top: -190px;
+  }
+
+  .project-ins:hover {
+    opacity: 100%;
+  }
 }
