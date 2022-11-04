@@ -727,6 +727,10 @@ button:hover {
     justify-content: space-around;
   }
 
+  button {
+    transition: background-color, 0.2ms, ease-in-out, 1000ms;
+  }
+
   button:hover {
     background-color: white;
     border: 1px solid #1a2236;
