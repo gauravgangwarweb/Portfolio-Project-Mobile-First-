@@ -13,3 +13,13 @@ function closeMenu() {
 toggle.addEventListener('click', openMenu);
 cros.addEventListener('click', closeMenu);
 resMenu.addEventListener('click', closeMenu);
+
+const objItems = [
+  {
+    title: "Project name goes here",
+    tech: ["HTML/CSS", "Ruby on Rails", "Javascript"],
+    crossImg: ["./assets/union.svg"],
+    projImg: [""] 
+  }
+]
+
