@@ -10,27 +10,30 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img id="menupng" src="./assets/ic_menu.png" alt="menu" />
-      <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#works">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="responsive-menu">
-      <img id="closeMenu" class="menu-close" src="./assets/Union.svg" alt="close-button">
-      <ul>
-        <li class="tm-links"><a href="#hello">Hello</a></li>
-        <li class="tm-links"><a href="#works">Portfolio</a></li>
-        <li class="tm-links"><a href="#about">About</a></li>
-        <li class="tm-links"><a href="#contact">Contact</a></li>
-      </ul>
-      <img class="imgMenu" src="./assets/image_geometry_menu_2.svg" alt="image-geometry">
-    </div>
-  </header>
+  <div id="prjpopUp"></div>
+  <section>
+    <header>
+      <nav>
+        <img id="menupng" src="./assets/ic_menu.png" alt="menu" />
+        <ul>
+          <li><a href="#hello">Hello</a></li>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="responsive-menu">
+        <img id="closeMenu" class="menu-close" src="./assets/Union.svg" alt="close-button">
+        <ul>
+          <li class="tm-links"><a href="#hello">Hello</a></li>
+          <li class="tm-links"><a href="#works">Portfolio</a></li>
+          <li class="tm-links"><a href="#about">About</a></li>
+          <li class="tm-links"><a href="#contact">Contact</a></li>
+        </ul>
+        <img class="imgMenu" src="./assets/image_geometry_menu_2.svg" alt="image-geometry">
+      </div>
+    </header>
+  </section>
   <section class="container1" id="hello">
     <div class="cont-text-div">
       <h1 class="name">Gaurav Gangwar</h1>
@@ -61,9 +64,9 @@
             <li>JavaScript</li>
           </ul>
           <a href="#">
-            <button type="button">
+            <button data-id="prj1" class="prjButton" type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png" alt="button" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
             </button>
           </a>
         </div>
@@ -81,15 +84,15 @@
             <li>JavaScript</li>
           </ul>
           <a href="#">
-            <button type="button">
+            <button data-id="prj2" class="prjButton" type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png" alt="button" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
             </button>
           </a>
         </div>
       </div>
       <div class="prtemplate2-gem">
-        <img src="./assets/image-geometry_2.svg" alt="geometry"/>
+        <img src="./assets/image-geometry_2.svg" alt="geometry" />
       </div>
       <!-- Project 3 -->
       <div class="project pr-3">
@@ -102,9 +105,9 @@
             <li>JavaScript</li>
           </ul>
           <a href="#">
-            <button type="button">
+            <button data-id="prj3" class="prjButton" type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png" alt="button" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
             </button>
           </a>
         </div>
@@ -122,9 +125,9 @@
             <li>JavaScript</li>
           </ul>
           <a href="#">
-            <button type="button">
+            <button data-id="prj4" class="prjButton" type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png" alt="button" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
             </button>
           </a>
         </div>
@@ -141,9 +144,9 @@
               <li>JavaScript</li>
             </ul>
             <a href="#">
-              <button type="button">
+              <button data-id="prj5" class="prjButton" type="button">
                 <span>See this project</span>
-                <img class="pr-button-img" src="./assets/Union.png" alt="buuton" />
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
               </button>
             </a>
           </div>
@@ -169,9 +172,9 @@
             <li>JavaScript</li>
           </ul>
           <a href="#">
-            <button type="button">
+            <button data-id="prj6" class="prjButton" type="button">
               <span>See this project</span>
-              <img class="pr-button-img" src="./assets/Union.png" alt="button" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7423 10.6265L13.4834 5.36758L14.8976 3.95337L22.5707 11.6265L14.8976 19.2996L13.4834 17.8854L18.7422 12.6265H2L2 10.6265H18.7423Z" fill="currentColor"/></svg>
             </button>
           </a>
         </div>
@@ -189,7 +192,10 @@
       </p>
       <button type="button">
         Get my CV
-        <img src="./assets/ic_download.svg" alt="button" />
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 6V24H25V6" stroke="white" stroke-width="2"/>
+          <path d="M13.6623 13.9624L17.9103 9.71441L19.3245 11.1286L12.6622 17.7909L6 11.1286L7.41421 9.71441L11.6623 13.9625V2.52881e-07L13.6623 0V13.9624Z" fill="currentColor"/>
+          </svg>
       </button>
     </div>
     <div class="about-col-2">
@@ -257,24 +263,26 @@
     </div>
     <img class="img2" src="./assets/image-geometry_7.svg" alt="geometry">
   </section>
-  <footer>
-    <div>
-      <a href="#">
-        <button type="button">
-          Get my Resume
-          <img src="./assets/resume.png" alt="button" />
-        </button>
-      </a>
-    </div>
-    <div class="footer-icons">
-      <a href="#"><img class="stack-img" src="./assets/ic_stackoverflow.png" alt="stactoverflow" /></a>
-      <a href="#"><img class="icons-img" src="./assets/ic_github.png" alt="github" /></a>
-      <a href="#"><img class="icons-img" src="./assets/Group.png" alt="twitter" /></a>
-      <a href="#"><img class="icons-img" src="./assets/ic_linkedin.png" alt="linkedin" /></a>
-      <a href="#"><img class="icons-img" src="./assets/ic_medium.png" alt="medium" /></a>
-      <a href="#"><img class="icons-img" src="./assets/ic_angellist.png" alt="angellist" /></a>
-    </div>
-  </footer>
+  <section>
+    <footer>
+      <div>
+        <a href="#">
+          <button type="button">
+            Get my Resume
+            <img src="./assets/resume.png" alt="button" />
+          </button>
+        </a>
+      </div>
+      <div class="footer-icons">
+        <a href="#"><img class="stack-img" src="./assets/ic_stackoverflow.png" alt="stactoverflow" /></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_github.png" alt="github" /></a>
+        <a href="#"><img class="icons-img" src="./assets/Group.png" alt="twitter" /></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_linkedin.png" alt="linkedin" /></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_medium.png" alt="medium" /></a>
+        <a href="#"><img class="icons-img" src="./assets/ic_angellist.png" alt="angellist" /></a>
+      </div>
+    </footer>
+  </section>
   <script src="main.js"></script>
 </body>
 
