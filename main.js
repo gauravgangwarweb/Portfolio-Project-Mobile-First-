@@ -151,10 +151,10 @@ allBtns.forEach((btn) => {
   });
 });
 
-// form validation 
+// form validation
 const form = document.getElementById('form');
 const input = document.getElementById('email');
-const errorMsg = document.getElementById('error')
+const errorMsg = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
