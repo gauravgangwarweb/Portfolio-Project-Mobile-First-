@@ -563,6 +563,13 @@ button:hover {
   display: none !important;
 }
 
+#error {
+  color: crimson;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2%;
+  margin-bottom: -5%
+}
+
 @media screen and (min-width: 768px) {
   body {
     background: none;
