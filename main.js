@@ -136,3 +136,19 @@ allBtns.forEach((btn) => {
     });
   });
 });
+
+// form validation
+const form = document.getElementById('form');
+const input = document.getElementById('email');
+const errorMsg = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = input.value.trim();
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (!regex.test(email)) {
+    errorMsg.textContent = 'Email should be in lower case only';
+  } else {
+    form.submit();
+  }
+});
