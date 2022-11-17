@@ -13,3 +13,140 @@ function closeMenu() {
 toggle.addEventListener('click', openMenu);
 cros.addEventListener('click', closeMenu);
 resMenu.addEventListener('click', closeMenu);
+
+const objItems = [
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 21.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 46.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 25.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 27.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 26.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    crossImg: ['./assets/union.svg'],
+    projImg: ['./assets/Rectangle 47.svg'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    link: { href: '#', value: 'See Project' },
+    githubLink: { href: '#', value: '#' },
+  },
+];
+
+const popUp = document.getElementById('prjpopUp');
+const section = document.createElement('section');
+const allBtns = document.querySelectorAll('.prjButton');
+const hideAll = document.querySelectorAll('section');
+
+allBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const temp = e.currentTarget.dataset;
+    // console.log(typeof temp.id);
+    let i = 0;
+    if (temp.id === 'prj1') {
+      i = 0;
+    } else if (temp.id === 'prj2') {
+      i = 1;
+    } else if (temp.id === 'prj3') {
+      i = 2;
+    } else if (temp.id === 'prj4') {
+      i = 3;
+    } else if (temp.id === 'prj5') {
+      i = 4;
+    } else if (temp.id === 'prj6') {
+      i = 5;
+    }
+    const prjDet = objItems[i];
+    section.innerHTML = `
+<div class="popupWin">
+  <div class="popupHead">
+    <h2>${prjDet.title}</h2>
+    <img id="closeBtn" src="${prjDet.crossImg}" alt="">
+  </div>
+  <div class="prjTech">
+    <button>${prjDet.tech[0]}</button>
+    <button>${prjDet.tech[1]}</button>
+    <button>${prjDet.tech[2]}</button>
+  </div>
+  <div class="prjImg">
+    <img src="${prjDet.projImg}" alt="project">
+  </div>
+  <div class="prjDesc">
+    <div class="prjDesc1">
+      <p>${prjDet.description}</p>
+    </div>
+    <div class="buttons">
+      <a href="${prjDet.link}">
+        <button>
+          <span>See live</span>
+          <img src="./assets/Union1.svg" alt="">
+        </button>
+      </a>
+      <a href="${prjDet.githubLink}">
+        <button>
+          <span>See source</span>
+          <img src="./assets/ic_github_white.svg" alt="">
+        </button>
+      </a>
+    </div>
+    <div class="footerBtn">
+      <button>
+        <img src="./assets/ic_arrow_left.svg" alt="">
+        <span>Preveious Project</span>
+      </button>
+      <button>
+        <span>Next Project</span>
+        <img src="./assets/ic_arrow_right.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+</div>
+  `;
+    popUp.appendChild(section);
+    hideAll.forEach((i) => i.classList.toggle('hideSec'));
+    const cloBtn = document.getElementById('closeBtn');
+    cloBtn.addEventListener('click', () => {
+      popUp.removeChild(section);
+      hideAll.forEach((i) => i.classList.toggle('hideSec'));
+    });
+  });
+});
