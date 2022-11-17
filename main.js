@@ -78,23 +78,9 @@ const hideAll = document.querySelectorAll('section');
 
 allBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-    const temp = e.currentTarget.dataset;
-    // console.log(typeof temp.id);
-    let i = 0;
-    if (temp.id === 'prj1') {
-      i = 0;
-    } else if (temp.id === 'prj2') {
-      i = 1;
-    } else if (temp.id === 'prj3') {
-      i = 2;
-    } else if (temp.id === 'prj4') {
-      i = 3;
-    } else if (temp.id === 'prj5') {
-      i = 4;
-    } else if (temp.id === 'prj6') {
-      i = 5;
-    }
-    const prjDet = objItems[i];
+    let temp = e.currentTarget.dataset;
+    temp = +temp.id[temp.id.length - 1];
+    const prjDet = objItems[temp - 1];
     section.innerHTML = `
 <div class="popupWin">
   <div class="popupHead">
