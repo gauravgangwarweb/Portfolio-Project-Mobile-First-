@@ -152,3 +152,17 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+const data = document.querySelector('.start-collab');
+data.addEventListener('click', () => {
+  const name1 = document.getElementById('full-name').value;
+  const email1 = document.getElementById('email').value;
+  const text1 = document.getElementById('text-area').value;
+  window.localStorage.setItem('name', name1);
+  window.localStorage.setItem('email', email1);
+  window.localStorage.setItem('message', text1);
+});
+
+document.getElementById('full-name').value = localStorage.getItem('name');
+document.getElementById('email').value = localStorage.getItem('email');
+document.getElementById('text-area').value = localStorage.getItem('message');
