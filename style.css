@@ -377,7 +377,6 @@ form {
   margin-left: 16px;
   margin-top: 32px;
   background-color: #fff;
-  border: 1px solid #dfdfe0;
   border-radius: 4px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -386,8 +385,10 @@ form {
   color: #1a2236;
 }
 
-::placeholder {
-  padding-left: 16px;
+#full-name,
+#email,
+#text-area {
+  padding-left: 1vw;
 }
 
 .form-items {
@@ -403,6 +404,11 @@ form {
   font-weight: 400;
   font-size: 14px;
   color: #1a2236;
+}
+
+.form-items:hover {
+  border: 2px solid;
+  box-shadow: 0 5px 15px rgba(94, 32, 138, 0.682);
 }
 
 #text-area {
@@ -1010,8 +1016,6 @@ button:hover {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 27px;
-    padding: 2px;
     border: none;
     background: none;
   }

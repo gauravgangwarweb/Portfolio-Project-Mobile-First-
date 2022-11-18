@@ -78,23 +78,9 @@ const hideAll = document.querySelectorAll('section');
 
 allBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-    const temp = e.currentTarget.dataset;
-    // console.log(typeof temp.id);
-    let i = 0;
-    if (temp.id === 'prj1') {
-      i = 0;
-    } else if (temp.id === 'prj2') {
-      i = 1;
-    } else if (temp.id === 'prj3') {
-      i = 2;
-    } else if (temp.id === 'prj4') {
-      i = 3;
-    } else if (temp.id === 'prj5') {
-      i = 4;
-    } else if (temp.id === 'prj6') {
-      i = 5;
-    }
-    const prjDet = objItems[i];
+    let temp = e.currentTarget.dataset;
+    temp = +temp.id[temp.id.length - 1];
+    const prjDet = objItems[temp - 1];
     section.innerHTML = `
 <div class="popupWin">
   <div class="popupHead">
@@ -151,8 +137,32 @@ allBtns.forEach((btn) => {
   });
 });
 
-const form = document.querySelector('#form');
-const name = document.querySelector('#full-name');
-const email = document.querySelector('#email');
-const textArea = document.querySelector('#textArea');
+// form validation
+const form = document.getElementById('form');
+const input = document.getElementById('email');
+const errorMsg = document.getElementById('error');
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = input.value.trim();
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (!regex.test(email)) {
+    errorMsg.textContent = 'Email should be in lower case only';
+  } else {
+    form.submit();
+  }
+});
+
+const data = document.querySelector('.start-collab');
+data.addEventListener('click', () => {
+  const name1 = document.getElementById('full-name').value;
+  const email1 = document.getElementById('email').value;
+  const text1 = document.getElementById('text-area').value;
+  window.localStorage.setItem('name', name1);
+  window.localStorage.setItem('email', email1);
+  window.localStorage.setItem('message', text1);
+});
+
+document.getElementById('full-name').value = localStorage.getItem('name');
+document.getElementById('email').value = localStorage.getItem('email');
+document.getElementById('text-area').value = localStorage.getItem('message');
